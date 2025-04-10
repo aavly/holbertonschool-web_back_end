@@ -1,3 +1,3 @@
-import getBudgetForCurrentYear from './8-getBudgetCurrentYear.js';
+import createEmployeesObject from './11-createEmployeesObject.js';
 
-console.log(getBudgetForCurrentYear(2100, 5200, 1090));
+console.log(createEmployeesObject("Software", [ "Bob", "Sylvie" ]));
