@@ -5,6 +5,8 @@ let students = [
 	{id: 5, firstName: "Serena", location:"San Francisco"},
 ]
 
-export default function getListStudents() {
+const getListStudents = () => {
 	return students;
-}
+};
+
+export default getListStudents
