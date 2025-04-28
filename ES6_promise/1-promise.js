@@ -5,8 +5,8 @@ const getFullResponseFromAPI = (success) => {
 		if (success) {
 			const object = { status: 200, body: 'Success' };
 			resolve(object);
-		} else {
-			reject("The fake API is not working currently");
+		} else { 
+			throw "The fake API is not working currently";
 		}
 	});
 }
