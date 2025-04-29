@@ -4,7 +4,7 @@ import asyncio
 import random
 
 
-async def wait_random(max_delay=10) -> float:
+async def wait_random(max_delay: int = 10) -> float:
     """
     coroutine that waits for the amount of time randomly generated
     then returns that same number once the time has passed
