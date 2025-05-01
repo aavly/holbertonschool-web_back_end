@@ -3,11 +3,13 @@
 Task 0. using async_generator to yield values
 """
 
+
 import asyncio
 import random
-from typing import AsyncGenerator
+import typing
 
-async def async_generator() -> AsyncGenerator[float, None]:
+
+async def async_generator() -> typing.Generator[float, None, None]:
     """
     Task 0. using async_generator to yield values
     """
