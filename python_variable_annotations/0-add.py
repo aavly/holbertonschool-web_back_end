@@ -8,4 +8,4 @@ def add(a: float, b: float) -> float:
     """
     Typed-annotated function
     """
-    return sum
+    return a + b
