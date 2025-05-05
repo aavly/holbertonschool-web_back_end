@@ -43,8 +43,8 @@ class Server:
         """
         Deletion-resilient hypermedia pagination
         """
-        assert isinstance(index, int) == True
-        assert isinstance(page_size, int) == True
+        assert isinstance(index, int) is True
+        assert isinstance(page_size, int) is True
         assert index >= 0
         assert index < len(self.indexed_dataset())
 
