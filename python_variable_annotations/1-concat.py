@@ -4,8 +4,8 @@ Task 1.
 """
 
 
-def add(a: float, b: float) -> float:
+def concat(str1: str, str2: str) -> str:
     """
     Typed-annotated function
     """
-    return sum
+    return str1 + str2
