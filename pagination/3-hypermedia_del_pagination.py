@@ -20,7 +20,7 @@ class Server:
     def dataset(self) -> List[List]:
         """Cached dataset
         """
-        if self.__dataset == None:
+        if self.__dataset is None:
             with open(self.DATA_FILE) as f:
                 reader = csv.reader(f)
                 dataset = [row for row in reader]
@@ -31,7 +31,7 @@ class Server:
     def indexed_dataset(self) -> Dict[int, List]:
         """Dataset indexed by sorting position, starting at 0
         """
-        if isinstance(self.__indexed_dataset, type (None)):
+        if isinstance(self.__indexed_dataset, type(None)):
             dataset = self.dataset()
             truncated_dataset = dataset[:1000]
             self.__indexed_dataset = {
@@ -43,8 +43,8 @@ class Server:
         """
         Deletion-resilient hypermedia pagination
         """
-        assert type(index) == int
-        assert type(page_size) == int
+        assert isinstance(index, int) == True
+        assert isinstance(page_size, int) == True
         assert index >= 0
         assert index < len(self.indexed_dataset())
 
