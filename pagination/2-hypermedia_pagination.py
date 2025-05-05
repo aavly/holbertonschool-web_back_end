@@ -49,6 +49,9 @@ class Server:
         return dataset[start:end] if start < len(dataset) else []
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
+        """
+        Returns a dictionary containing key-value pairs of page info
+        """
         data = self.get_page(page, page_size)
         total_items = len(self.dataset())
         total_pages = math.ceil(total_items / page_size)
