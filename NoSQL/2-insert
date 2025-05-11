@@ -1,0 +1,5 @@
+// Task 2. Insert a document in the collection school
+$1 = db
+db.school.insertOne({
+	name: "Holberton school"
+})
