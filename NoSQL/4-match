@@ -1,0 +1,6 @@
+// Task 4. List all documents with name="Holberton school" in a collection
+db.school.find(
+  {
+    name: "Holberton school"
+  }
+)
